@@ -15,18 +15,25 @@ public class Fabrica {
         ReprodutorMusical reprodutorMusical = new Spotify();
         Iphone iphone = new Iphone();
 
+        System.out.println("Aparelho Telefonico");
         aparelhoTelefonico.ligar("123456");
         aparelhoTelefonico.iniciarCorreioVoz();
         aparelhoTelefonico.atender();
+        System.out.println("-------------------------");
 
+        System.out.println("NavegadorInternet");
         navegadorInternet.exibirPagina("www.google.com");
         navegadorInternet.atualizarPagina();
         navegadorInternet.adicionarNovaAba();
+        System.out.println("-------------------------");
 
+        System.out.println("ReprodutorMusical");
         reprodutorMusical.tocar();
         reprodutorMusical.pausar();
         reprodutorMusical.selecionarMusica("parabens pra voce");
+        System.out.println("-------------------------");
 
+        System.out.println("Iphone");
         iphone.ligar("123456");
         iphone.iniciarCorreioVoz();
         iphone.atender();
@@ -36,6 +43,7 @@ public class Fabrica {
         iphone.tocar();
         iphone.pausar();
         iphone.selecionarMusica("parabens pra voce");
+        System.out.println("-------------------------");
 
 
     }
